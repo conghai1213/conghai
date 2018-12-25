@@ -1,0 +1,224 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>doanweb</Name>
+    <ProjectGuid>{cc0695b1-854a-4b12-a32a-fb70bc0ba51b}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <RuntimeVersion>7.1</RuntimeVersion>
+    <SpecificPageValue>create account.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="api\user_check.php" />
+    <Compile Include="create account.php" />
+    <Compile Include="details.php" />
+    <Compile Include="index.php" />
+    <Compile Include="lib\db.php" />
+    <Compile Include="login.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="product.php" />
+    <Compile Include="profile.php" />
+    <Compile Include="upload.php" />
+    <Compile Include="vendor\autoload.php" />
+    <Compile Include="vendor\composer\autoload_classmap.php" />
+    <Compile Include="vendor\composer\autoload_namespaces.php" />
+    <Compile Include="vendor\composer\autoload_psr4.php" />
+    <Compile Include="vendor\composer\autoload_real.php" />
+    <Compile Include="vendor\composer\autoload_static.php" />
+    <Compile Include="vendor\composer\ClassLoader.php" />
+    <Compile Include="vendor\gregwar\captcha\demo\demo.php" />
+    <Compile Include="vendor\gregwar\captcha\demo\fingerprint.php" />
+    <Compile Include="vendor\gregwar\captcha\demo\index.php" />
+    <Compile Include="vendor\gregwar\captcha\demo\ocr.php" />
+    <Compile Include="vendor\gregwar\captcha\demo\output.php" />
+    <Compile Include="vendor\gregwar\captcha\src\Gregwar\Captcha\CaptchaBuilder.php" />
+    <Compile Include="vendor\gregwar\captcha\src\Gregwar\Captcha\CaptchaBuilderInterface.php" />
+    <Compile Include="vendor\gregwar\captcha\src\Gregwar\Captcha\ImageFileHandler.php" />
+    <Compile Include="vendor\gregwar\captcha\src\Gregwar\Captcha\PhraseBuilder.php" />
+    <Compile Include="vendor\gregwar\captcha\src\Gregwar\Captcha\PhraseBuilderInterface.php" />
+    <Compile Include="vendor\gregwar\captcha\tests\CaptchaBuilderTest.php" />
+    <Compile Include="vendor\symfony\finder\Comparator\Comparator.php" />
+    <Compile Include="vendor\symfony\finder\Comparator\DateComparator.php" />
+    <Compile Include="vendor\symfony\finder\Comparator\NumberComparator.php" />
+    <Compile Include="vendor\symfony\finder\Exception\AccessDeniedException.php" />
+    <Compile Include="vendor\symfony\finder\Exception\ExceptionInterface.php" />
+    <Compile Include="vendor\symfony\finder\Finder.php" />
+    <Compile Include="vendor\symfony\finder\Glob.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\CustomFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\DateRangeFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\DepthRangeFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\ExcludeDirectoryFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\FilecontentFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\FilenameFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\FileTypeFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\FilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\MultiplePcreFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\PathFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\RecursiveDirectoryIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\SizeRangeFilterIterator.php" />
+    <Compile Include="vendor\symfony\finder\Iterator\SortableIterator.php" />
+    <Compile Include="vendor\symfony\finder\SplFileInfo.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Comparator\ComparatorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Comparator\DateComparatorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Comparator\NumberComparatorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\FinderTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\GlobTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\CustomFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\DateRangeFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\DepthRangeFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\ExcludeDirectoryFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\FilecontentFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\FilenameFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\FileTypeFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\FilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\Iterator.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\IteratorTestCase.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\MockFileListIterator.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\MockSplFileInfo.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\MultiplePcreFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\PathFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\RealIteratorTestCase.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\RecursiveDirectoryIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\SizeRangeFilterIteratorTest.php" />
+    <Compile Include="vendor\symfony\finder\Tests\Iterator\SortableIteratorTest.php" />
+    <Compile Include="viewDetails.php" />
+    <Compile Include="view_cart.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api\" />
+    <Folder Include="assets\bootstrap-3.3.7-dist\" />
+    <Folder Include="assets\bootstrap-3.3.7-dist\css\" />
+    <Folder Include="assets\bootstrap-3.3.7-dist\fonts\" />
+    <Folder Include="assets\bootstrap-3.3.7-dist\js\" />
+    <Folder Include="assets\bootstrap-touchspin\" />
+    <Folder Include="imgs\sp\" />
+    <Folder Include="imgs\sp\10\" />
+    <Folder Include="imgs\sp\1\" />
+    <Folder Include="imgs\sp\2\" />
+    <Folder Include="imgs\sp\3\" />
+    <Folder Include="imgs\sp\4\" />
+    <Folder Include="imgs\sp\5\" />
+    <Folder Include="imgs\sp\6\" />
+    <Folder Include="imgs\sp\7\" />
+    <Folder Include="imgs\sp\8\" />
+    <Folder Include="imgs\sp\9\" />
+    <Folder Include="lib\" />
+    <Folder Include="assets\" />
+    <Folder Include="imgs\" />
+    <Folder Include="vendor\" />
+    <Folder Include="vendor\composer\" />
+    <Folder Include="vendor\gregwar\" />
+    <Folder Include="vendor\gregwar\captcha\" />
+    <Folder Include="vendor\gregwar\captcha\demo\" />
+    <Folder Include="vendor\gregwar\captcha\src\" />
+    <Folder Include="vendor\gregwar\captcha\src\Gregwar\" />
+    <Folder Include="vendor\gregwar\captcha\src\Gregwar\Captcha\" />
+    <Folder Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\" />
+    <Folder Include="vendor\gregwar\captcha\tests\" />
+    <Folder Include="vendor\symfony\" />
+    <Folder Include="vendor\symfony\finder\" />
+    <Folder Include="vendor\symfony\finder\Comparator\" />
+    <Folder Include="vendor\symfony\finder\Exception\" />
+    <Folder Include="vendor\symfony\finder\Iterator\" />
+    <Folder Include="vendor\symfony\finder\Tests\" />
+    <Folder Include="vendor\symfony\finder\Tests\Comparator\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\.dot\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\.dot\b\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\A\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\A\B\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\A\B\C\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\copy\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\copy\A\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\copy\A\B\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\copy\A\B\C\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\one\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\one\b\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\r+e.gex[c]a%28r%29s\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\r+e.gex[c]a%28r%29s\dir\" />
+    <Folder Include="vendor\symfony\finder\Tests\Fixtures\with space\" />
+    <Folder Include="vendor\symfony\finder\Tests\Iterator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addItemToCart.inc.php" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="assets\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="assets\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="assets\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="assets\jquery-3.1.1.min.js" />
+    <Content Include="assets\bootstrap-touchspin\jquery.bootstrap-touchspin.css" />
+    <Content Include="assets\bootstrap-touchspin\jquery.bootstrap-touchspin.js" />
+    <Content Include="assets\bootstrap-touchspin\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="assets\bootstrap-touchspin\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="cart.inc" />
+    <Content Include="imgs\sp\1\main.jpg" />
+    <Content Include="imgs\sp\1\main_thumbs.jpg" />
+    <Content Include="imgs\sp\2\main.jpg" />
+    <Content Include="imgs\sp\2\main_thumbs.jpg" />
+    <Content Include="imgs\sp\3\main_thumbs.jpg" />
+    <Content Include="imgs\sp\4\main_thumbs.jpg" />
+    <Content Include="imgs\sp\5\main_thumbs.jpg" />
+    <Content Include="imgs\sp\6\main_thumbs.jpg" />
+    <Content Include="updateCart.inc" />
+    <Content Include="user.inc" />
+    <Content Include="vendor\composer\installed.json" />
+    <Content Include="vendor\composer\LICENSE" />
+    <Content Include="vendor\gregwar\captcha\.gitignore" />
+    <Content Include="vendor\gregwar\captcha\.travis.yml" />
+    <Content Include="vendor\gregwar\captcha\composer.json" />
+    <Content Include="vendor\gregwar\captcha\LICENSE" />
+    <Content Include="vendor\gregwar\captcha\phpunit.xml.dist" />
+    <Content Include="vendor\gregwar\captcha\README.md" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha0.ttf" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha1.ttf" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha2.ttf" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha3.ttf" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha4.ttf" />
+    <Content Include="vendor\gregwar\captcha\src\Gregwar\Captcha\Font\captcha5.ttf" />
+    <Content Include="vendor\symfony\finder\.gitignore" />
+    <Content Include="vendor\symfony\finder\CHANGELOG.md" />
+    <Content Include="vendor\symfony\finder\composer.json" />
+    <Content Include="vendor\symfony\finder\LICENSE" />
+    <Content Include="vendor\symfony\finder\phpunit.xml.dist" />
+    <Content Include="vendor\symfony\finder\README.md" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\.dot\a" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\.dot\b\c.neon" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\.dot\b\d.neon" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\A\a.dat" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\A\B\ab.dat" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\A\B\C\abc.dat" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\copy\A\a.dat.copy" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\copy\A\B\ab.dat.copy" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\copy\A\B\C\abc.dat.copy" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\dolor.txt" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\ipsum.txt" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\lorem.txt" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\one\.dot" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\one\a" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\one\b\c.neon" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\one\b\d.neon" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\r+e.gex[c]a%28r%29s\dir\bar.dat" />
+    <Content Include="vendor\symfony\finder\Tests\Fixtures\with space\foo.txt" />
+  </ItemGroup>
+</Project>
